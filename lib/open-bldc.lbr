@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1864,6 +1864,27 @@
 <circle x="0.6096" y="-0.381" radius="0.0762" width="0.254" layer="21"/>
 <circle x="0" y="0.6858" radius="0.0762" width="0.1524" layer="21"/>
 </package>
+<package name="TRACO_TMR_2WI">
+<pad name="P1_U_IN_N" x="0" y="0" drill="0.8"/>
+<pad name="P2_U_IN_P" x="2.54" y="0" drill="0.8"/>
+<pad name="P3_EXT_ON_OFF" x="5.08" y="0" drill="0.8"/>
+<pad name="P6_U_OUT_P" x="12.7" y="0" drill="0.8"/>
+<pad name="P7_COMMON" x="15.24" y="0" drill="0.8"/>
+<pad name="P8_NC" x="17.78" y="0" drill="0.8"/>
+<pad name="P9_U_OUT_N" x="20.32" y="0" drill="0.8"/>
+<wire x1="-1.778" y1="-2.794" x2="24.13" y2="-2.794" width="0.127" layer="21"/>
+<wire x1="24.13" y1="-2.794" x2="24.13" y2="6.35" width="0.127" layer="21"/>
+<wire x1="24.13" y1="6.35" x2="-1.778" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="6.35" x2="-1.778" y2="-2.794" width="0.127" layer="21"/>
+</package>
+<package name="AVX_FFB5">
+<pad name="P$1" x="0" y="0" drill="1"/>
+<pad name="P$2" x="27.5082" y="0" drill="1"/>
+<wire x1="-2.286" y1="-11.176" x2="29.972" y2="-11.176" width="0.127" layer="21"/>
+<wire x1="29.972" y1="-11.176" x2="29.972" y2="11.176" width="0.127" layer="21"/>
+<wire x1="29.972" y1="11.176" x2="-2.286" y2="11.176" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="11.176" x2="-2.286" y2="-11.176" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AT90PWM3">
@@ -2798,6 +2819,19 @@
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <text x="-10.16" y="10.16" size="1.778" layer="95" rot="MR180">&gt;NAME</text>
 <text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DCDC_ISO_TRACO">
+<pin name="U_IN_P" x="-17.78" y="7.62" length="middle"/>
+<pin name="U_IN_N" x="-17.78" y="0" length="middle"/>
+<pin name="EXT_ON_OFF" x="-17.78" y="-7.62" length="middle"/>
+<pin name="U_OUT_P" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="U_OUT_N" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="COMM" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<text x="-5.08" y="10.16" size="1.27" layer="94">TMR 2WI</text>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4054,6 +4088,61 @@
 <connect gate="G$1" pin="SHDN" pad="5"/>
 <connect gate="G$1" pin="TXD" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FDB86135">
+<gates>
+<gate name="G$1" symbol="MOSFET-N-3PIN" x="-17.78" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="DPAK">
+<connects>
+<connect gate="G$1" pin="D" pad="P$1"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRACO_TMR_2WI">
+<description>DC/DC Converter
+TRACO TMR 2WI Series</description>
+<gates>
+<gate name="G$1" symbol="DCDC_ISO_TRACO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TRACO_TMR_2WI">
+<connects>
+<connect gate="G$1" pin="COMM" pad="P7_COMMON"/>
+<connect gate="G$1" pin="EXT_ON_OFF" pad="P3_EXT_ON_OFF"/>
+<connect gate="G$1" pin="U_IN_N" pad="P1_U_IN_N"/>
+<connect gate="G$1" pin="U_IN_P" pad="P2_U_IN_P"/>
+<connect gate="G$1" pin="U_OUT_N" pad="P9_U_OUT_N"/>
+<connect gate="G$1" pin="U_OUT_P" pad="P6_U_OUT_P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAPACITOR_AVX_FFB5">
+<gates>
+<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AVX_FFB5">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
