@@ -1,0 +1,25 @@
+This power stage shall be able to drive a BLDC with approximately 3kW.
+
+
++++ Spec/Sizing +++
+Supply voltage between 24V and 60V.
+Motor current less than 100A peak.
+Hall sensor current feedback.
+Supply voltage sensing.
+
+
++++ Current Sensors +++
+Two hall sensors Allegro ACS756SCA-100B.
+Measurement range: +/-100A peak.
+
+
++++ MOSFET's +++
+FDB86135 (100V, 3mOhm)
+--> conduction losses < 4W
+
+
++++ Supply voltage sensing +++
+Voltage divider R13 & R14.
+Do not populate R26 & R27 in the power_driver!
+R27 may be replaced by a 3.3V zehner to protect the STM32.
+
