@@ -1,0 +1,12 @@
+
+Row {
+    rail
+    Col {
+        strip
+        strip
+        strip
+        strip
+        strip
+    }
+    rail
+}
