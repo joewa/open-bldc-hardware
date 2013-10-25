@@ -3,4 +3,4 @@ Changelog of the Open-BLDC "Strip" board
 v0.2
 Replaced 12V gate driver IC by a 20V type (IRS2184S).
 It should be possible to operate with 14.8V (3S) or even 4S if we are lucky.
-TODO: Review current measurement circuit.
+Redesign of the current measurement circuit.
