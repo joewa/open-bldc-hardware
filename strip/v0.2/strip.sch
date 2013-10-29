@@ -2785,7 +2785,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C24" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0603" value="1uF">
 <attribute name="PARTNO" value="cap-tan-0603-1u"/>
 </part>
-<part name="D4" library="pel_dipol_comp" deviceset="DIODE" device="-SOD-123" value="BAS21">
+<part name="D4" library="pel_dipol_comp" deviceset="DIODE" device="-SOD-123" value="BAT46WH">
 <attribute name="PARTNO" value="*"/>
 </part>
 <part name="C25" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0603" value="1uF">

@@ -1147,7 +1147,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="32.258" y="0.7406" size="0.635" layer="28" font="vector" ratio="16" rot="MR90"/>
 <attribute name="PARTNO" value="cap-tan-0603-1u" x="33.782" y="1.8582" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="D4" library="pel_dipol_comp" package="SOD-123-DIO" value="BAS21" x="41.91" y="5.4824" smashed="yes" rot="MR90">
+<element name="D4" library="pel_dipol_comp" package="SOD-123-DIO" value="BAT46WH" x="41.91" y="5.4824" smashed="yes" rot="MR90">
 <attribute name="NAME" x="42.926" y="4.9998" size="0.635" layer="26" font="vector" ratio="16" rot="MR90"/>
 <attribute name="VALUE" x="43.688" y="4.0854" size="1.27" layer="28" ratio="10" rot="MR90"/>
 <attribute name="PARTNO" value="*" x="41.91" y="5.4824" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -3006,45 +3006,6 @@ design rules under a new name.</description>
 <wire x1="16.4592" y1="8.1788" x2="16.4592" y2="8.7122" width="0.1524" layer="16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,6b79de3a5238e77b"/>
-<approved hash="19,1,07b73ad8ffeda3ed"/>
-<approved hash="19,1,1b13315ae8dfbc0d"/>
-<approved hash="19,1,1ad53a4fe350bcef"/>
-<approved hash="5,1,b17d904d05eb9f07"/>
-<approved hash="5,1,92f78e3aef69e4af"/>
-<approved hash="5,1,f444ba3d8316d50c"/>
-<approved hash="5,1,b8eae43be568d2b0"/>
-<approved hash="5,1,f858ae3ebd0a3310"/>
-<approved hash="5,1,a6ede23c836f38b5"/>
-<approved hash="5,1,ec549a3bd70f091d"/>
-<approved hash="5,1,9ce0f83d796e26b6"/>
-<approved hash="5,1,191b18a3de9661f0"/>
-<approved hash="19,1,68e04ff959d30051"/>
-<approved hash="19,1,68e04560539a013f"/>
-<approved hash="19,1,768444e74c211f2d"/>
-<approved hash="19,16,6b79de3a5238e77b"/>
-<approved hash="19,16,f3a61fc2184bf42f"/>
-<approved hash="19,16,b5ba1dde1a59b23d"/>
-<approved hash="19,16,cbb91fdd1857cc33"/>
-<approved hash="5,16,c96611b2f93e5299"/>
-<approved hash="5,16,2ae2063c7e30019d"/>
-<approved hash="5,16,c09258b2bb3f826f"/>
-<approved hash="5,16,1d1ee9343e38a361"/>
-<approved hash="5,16,9fce83b2793e6233"/>
-<approved hash="5,16,e84b302c3a20dd2a"/>
-<approved hash="5,16,f597b49bd380f4ec"/>
-<approved hash="5,16,8dbca54f9dedf4c6"/>
-<approved hash="5,16,a0f2018c6d8353b5"/>
-<approved hash="5,16,2e467871e28f5d48"/>
-<approved hash="5,16,cbb1f4a0065ad8bb"/>
-<approved hash="5,16,2db976703e8d7cb7"/>
-<approved hash="5,16,fc4efea2265b0544"/>
-<approved hash="5,16,3baf43427b8e72b9"/>
-<approved hash="5,16,727603783413237f"/>
-<approved hash="5,16,bb0ef0b83e0f53b4"/>
-<approved hash="5,16,463cfeba320ae5c6"/>
-</errors>
 </board>
 </drawing>
 </eagle>
