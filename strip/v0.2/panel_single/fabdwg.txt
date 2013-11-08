@@ -1,0 +1,7 @@
+* FR4 Material
+* All layers 35um copper
+* No holes plated through
+* Drills shown as finished sizes
+* Board thickness 1.6mm
+* Use merged.boardoutline.ger as board outline.
+
