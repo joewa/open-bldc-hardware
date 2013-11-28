@@ -8,7 +8,7 @@
 </settings>
 <grid distance="1" unitdist="mil" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,9 +28,9 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -1140,7 +1140,7 @@ Sollten andere Lagen belegt und relevant sein, so teilen Sie uns dies bitte expl
 <attribute name="VALUE" x="22.3012" y="4.1362" size="1.27" layer="28" ratio="10" rot="MR90"/>
 <attribute name="PARTNO" value="*" x="20.5232" y="5.5332" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="C23" library="pel_dipol_comp" package="0603-CAP" value="1uF" x="23.114" y="1.909" smashed="yes" rot="MR90">
+<element name="C23" library="pel_dipol_comp" package="0603-CAP" value="0.47uF" x="23.114" y="1.909" smashed="yes" rot="MR90">
 <attribute name="NAME" x="23.5966" y="0.9438" size="0.635" layer="26" font="vector" ratio="16" rot="MR90"/>
 <attribute name="VALUE" x="21.59" y="0.7914" size="0.635" layer="28" font="vector" ratio="16" rot="MR90"/>
 <attribute name="PARTNO" value="cap-tan-0603-1u" x="23.114" y="1.909" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -1160,7 +1160,7 @@ Sollten andere Lagen belegt und relevant sein, so teilen Sie uns dies bitte expl
 <attribute name="VALUE" x="33.0454" y="3.9584" size="1.27" layer="28" ratio="10" rot="MR90"/>
 <attribute name="PARTNO" value="*" x="31.2674" y="5.3554" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="C24" library="pel_dipol_comp" package="0603-CAP" value="1uF" x="33.782" y="1.8582" smashed="yes" rot="MR90">
+<element name="C24" library="pel_dipol_comp" package="0603-CAP" value="0.47uF" x="33.782" y="1.8582" smashed="yes" rot="MR90">
 <attribute name="NAME" x="34.1884" y="0.893" size="0.635" layer="26" font="vector" ratio="16" rot="MR90"/>
 <attribute name="VALUE" x="32.258" y="0.7406" size="0.635" layer="28" font="vector" ratio="16" rot="MR90"/>
 <attribute name="PARTNO" value="cap-tan-0603-1u" x="33.782" y="1.8582" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -1170,7 +1170,7 @@ Sollten andere Lagen belegt und relevant sein, so teilen Sie uns dies bitte expl
 <attribute name="VALUE" x="43.688" y="4.0854" size="1.27" layer="28" ratio="10" rot="MR90"/>
 <attribute name="PARTNO" value="*" x="41.91" y="5.4824" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="C25" library="pel_dipol_comp" package="0603-CAP" value="1uF" x="44.4246" y="1.8582" smashed="yes" rot="MR90">
+<element name="C25" library="pel_dipol_comp" package="0603-CAP" value="0.47uF" x="44.4246" y="1.8582" smashed="yes" rot="MR90">
 <attribute name="NAME" x="44.9072" y="0.9692" size="0.635" layer="26" font="vector" ratio="16" rot="MR90"/>
 <attribute name="VALUE" x="42.9006" y="0.7406" size="0.635" layer="28" font="vector" ratio="16" rot="MR90"/>
 <attribute name="PARTNO" value="cap-tan-0603-1u" x="44.4246" y="1.8582" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -3023,42 +3023,6 @@ Sollten andere Lagen belegt und relevant sein, so teilen Sie uns dies bitte expl
 <wire x1="16.4592" y1="8.1788" x2="16.4592" y2="8.7122" width="0.1524" layer="16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,26b7f5f579f7aab5"/>
-<approved hash="19,1,d9b7eae70c8c5e95"/>
-<approved hash="19,1,c4d3ea701037418f"/>
-<approved hash="19,1,c517e1551bb6416d"/>
-<approved hash="5,1,574da675340ba544"/>
-<approved hash="5,1,0c6c758c1fcf452e"/>
-<approved hash="5,1,3578e178b0126671"/>
-<approved hash="5,1,26711f8d61ce4f31"/>
-<approved hash="5,1,3964e97bba0f7c6d"/>
-<approved hash="5,1,3876118a7bc9a134"/>
-<approved hash="5,1,2568d97ee40bba60"/>
-<approved hash="5,1,027b3b8b8dc8bb37"/>
-<approved hash="5,1,c050038fd30170a7"/>
-<approved hash="19,1,94a6b91f99afcb0d"/>
-<approved hash="19,1,8ac2b89e8614d501"/>
-<approved hash="19,1,94a6b3b493eaca61"/>
-<approved hash="19,16,26b7f5f579f7aab5"/>
-<approved hash="19,16,fb61011b065efc24"/>
-<approved hash="19,16,bd7d0707004cba36"/>
-<approved hash="19,16,cf7e05040242c838"/>
-<approved hash="5,16,1571f8c07cffeb33"/>
-<approved hash="5,16,cef5e54e1af1bb37"/>
-<approved hash="5,16,1e8581c038fe39c5"/>
-<approved hash="5,16,d7090e46baf919cb"/>
-<approved hash="5,16,43d96ac0fcffdb99"/>
-<approved hash="5,16,345cd75ebee16b80"/>
-<approved hash="5,16,81cb3ecd2ab36120"/>
-<approved hash="5,16,647622c34606fa97"/>
-<approved hash="5,16,7252178165fae5d7"/>
-<approved hash="5,16,b741a7b0b6c54bca"/>
-<approved hash="5,16,bcbea5b296c49235"/>
-<approved hash="5,16,69ad1580bdf8c428"/>
-<approved hash="5,16,e3ef1d03b1e39525"/>
-<approved hash="5,16,9cf9c8b567f3e724"/>
-</errors>
 </board>
 </drawing>
 </eagle>
