@@ -4481,29 +4481,32 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="320.04" y="215.9" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="147.32" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="147.32" x2="190.5" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
 <label x="190.5" y="147.32" size="1.778" layer="95" xref="yes"/>
 <pinref part="C26" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="147.32" x2="190.5" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="149.86" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="A" pin="COM"/>
+<wire x1="142.24" y1="154.94" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
 <junction x="142.24" y="147.32"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="101.6" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="101.6" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
 <label x="182.88" y="101.6" size="1.778" layer="95" xref="yes"/>
 <pinref part="C27" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="101.6" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="A" pin="COM"/>
+<wire x1="142.24" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="109.22" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
 <junction x="142.24" y="101.6"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="45.72" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="45.72" x2="182.88" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="45.72" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
 <label x="182.88" y="45.72" size="1.778" layer="95" xref="yes"/>
 <pinref part="C32" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="45.72" x2="182.88" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="48.26" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="45.72" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="IC6" gate="A" pin="COM"/>
+<wire x1="142.24" y1="58.42" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
 <junction x="142.24" y="45.72"/>
 </segment>
 <segment>
